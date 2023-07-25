@@ -251,6 +251,7 @@ a.Incorrect type mentioned in JSON. E.g. for Option 1 where NP is registering an
 b.for option 3 instead of MSN set to true, it has been put as false and vice versa for non msn the flag is set true.
 
 #### Network participant's ondc-site-verification.html's encrypted signature verification failed
+```
 {
     "message": {
         "ack": {
@@ -264,9 +265,11 @@ b.for option 3 instead of MSN set to true, it has been put as false and vice ver
         "message": "https://{{netowrk_participant_subsctiber_id}} : Domain verification is failed "
     }
 }
+```
 
 Resolution
-•Use Plain Request_ID: Network Participant use plain request_id, without applying any hashing on request_id, while generating signature
-•Ensure Consistent Request_ID: Network Participant use same request_id in request body which they used while generating signature. The request_id used during signature generation must match the one used during verification to ensure successful validation.
-•Ensure signing public_key: signing publick_key is correct which is mentioned in the request body.
+a. Use Plain Request_ID: Network Participant use plain request_id, without applying any hashing on request_id, while generating signature
+b. Ensure Consistent Request_ID: Network Participant use same request_id in request body which they used while generating signature. The request_id 
+   used during signature generation must match the one used during verification to ensure successful validation.
+c. Ensure signing public_key: signing publick_key is correct which is mentioned in the request body.
 
