@@ -250,7 +250,7 @@ Resolution
 a.Incorrect type mentioned in JSON. E.g. for Option 1 where NP is registering and type is set sellerApp then the above error will be shown.  The value should be according to option set here.
 b.for option 3 instead of MSN set to true, it has been put as false and vice versa for non msn the flag is set true.
 
-#### Network participant's ondc-site-verification.html's encrypted signature verification failed
+### Network participant's ondc-site-verification.html's encrypted signature verification failed
 ```
 {
     "message": {
